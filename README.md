@@ -1,4 +1,4 @@
-# 📘 EduTutor AI (Streamlit Demo)
+# 📘 EduTutor AI 
 
 EduTutor AI is an interactive, AI-assisted learning platform designed to provide personalized quizzes and performance tracking for students and teachers. This is a demo version built using **Streamlit**, **Google Classroom API**, and **SQLite** for local quiz history storage.
 
