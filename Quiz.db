@@ -1,0 +1,22 @@
+import sqlite3
+
+conn = sqlite3.connect("quiz.db")
+cursor = conn.cursor()
+
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS quiz_history (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id TEXT,
+        subject TEXT,
+        question TEXT,
+        selected_option TEXT,
+        correct_option TEXT,
+        is_correct INTEGER,
+        timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+    )
+''')
+
+conn.commit()
+conn.close()
+
+print("✅ quiz.db created with quiz_history table.")
